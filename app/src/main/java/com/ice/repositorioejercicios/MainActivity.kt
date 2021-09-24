@@ -27,7 +27,10 @@ class MainActivity : AppCompatActivity() {
         //maps()
 
         //Leccion 7
-        loops()
+        //loops()
+
+        //Leccion 8
+        nullSafeti()
     }
 
     /*
@@ -286,5 +289,35 @@ class MainActivity : AppCompatActivity() {
             x++
         }
 
+    }
+
+    /*
+    Aqui vamos a hablar de seguridad contra nulos (Null Safety)
+     */
+    private fun nullSafeti(){
+        var myString = "MoureDev"
+       // myString = null Esto generaria error de compilacion
+        println(myString)
+        var mySafetyString : String? = "MoureDev null Safety"
+        mySafetyString = null
+        println(myString)
+
+        if(mySafetyString != null){
+            println(myString!!) //Fuerza que no sea nulo
+        }else{
+            println(myString)
+        }
+        mySafetyString = "Sus"
+//        println(myString)
+
+        //Safe call
+
+        println(mySafetyString?.length)
+
+        mySafetyString?.let {
+            println(it)
+        } ?: run{
+           println(mySafetyString)
+        }
     }
 }
