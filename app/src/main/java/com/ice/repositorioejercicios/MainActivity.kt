@@ -30,7 +30,10 @@ class MainActivity : AppCompatActivity() {
         //loops()
 
         //Leccion 8
-        nullSafeti()
+        //nullSafeti()
+
+        //Leccion 9
+        funciones()
     }
 
     /*
@@ -320,4 +323,31 @@ class MainActivity : AppCompatActivity() {
            println(mySafetyString)
         }
     }
+
+    /*
+    Aqui vamos a hablar de funciones
+     */
+    fun funciones(){
+        sayHello()
+        sayMyNameAndAge("Josué", 24)
+        println(sumarDosNumeros(1,2))
+        println(sumarDosNumeros(1, sumarDosNumeros(1,2)))
+        
+    }
+
+    //Funcion Simple
+    fun sayHello(){
+        println("Hola!")
+    }
+
+    //Funciones con parametros de entrada
+    fun sayMyNameAndAge(nombre : String, edad : Int){
+        println("Hola, mi nombre es $nombre y mi edad es $edad")
+    }
+
+    //Funciones con un valor de retorno
+    fun sumarDosNumeros(primerNumero : Int, segundoNumero : Int) : Int{
+         return primerNumero + segundoNumero
+    }
+
 }
