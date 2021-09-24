@@ -360,7 +360,7 @@ class MainActivity : AppCompatActivity() {
         brais.age=24
         val sara = Programmer("Sara",25 , arrayOf(Programmer.Language.JAVASCRIPT), arrayOf(brais))
         sara.code()
-        println("${sara.friends.first()} es amigo de ${sara.name}")
+        println("${sara.friends?.first()} es amigo de ${sara.name}")
     }
 
 }
