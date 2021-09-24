@@ -7,14 +7,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         //Leccion 1
         //variablesYConstantes()
+
         //Leccion 2 :D
         //tiposDeDatos()
+
         //Leccion 3
         //sentenciaIf()
+
         //Leccion 4
-        sentenciaWhen()
+        //sentenciaWhen()
+
+        //Leccion 5
+        arrays()
     }
 
     /*
@@ -147,5 +154,57 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    /*
+    Aqui vamps a hablar de arrays o arreglos
+     */
+    private fun arrays(){
+        val name = "arrays"
+        val surname = "Moure"
+        val company = "MoureDev"
+        val age = "32"
+        //Creacion de un Array
+        val myArray = arrayListOf<String>()
+        //Añadir datos de uno en uno
+        myArray.add(name)
+        myArray.add(surname)
+        myArray.add(company)
+        myArray.add(age)
+
+        println(myArray)
+
+        //Añadir un conjunto de Datos
+        myArray.addAll(listOf("Hola" , "Bienvenidos al Tutorial"))
+
+        println(myArray)
+
+        //Acceso a Datos
+
+        val myCompany : String = myArray[2]
+        println(myCompany)
+
+        //Modificacion de Datos
+        myArray[5] = "Suscribete y activa la campana"
+        println(myArray)
+
+        //Eliminar Datos
+        myArray.removeAt(4)
+        println(myArray)
+
+        //Recorrer
+        myArray.forEach{
+            println(it)
+        }
+
+        //Otras Operaciones
+        println(myArray.count())
+        myArray.clear()
+        println(myArray.count())
+
+        myArray.first()
+        myArray.last()
+        myArray.sort()
+        
     }
 }
