@@ -33,7 +33,10 @@ class MainActivity : AppCompatActivity() {
         //nullSafeti()
 
         //Leccion 9
-        funciones()
+        //funciones()
+
+        //Leccion 10
+        clases()
     }
 
     /*
@@ -332,7 +335,7 @@ class MainActivity : AppCompatActivity() {
         sayMyNameAndAge("Josué", 24)
         println(sumarDosNumeros(1,2))
         println(sumarDosNumeros(1, sumarDosNumeros(1,2)))
-        
+
     }
 
     //Funcion Simple
@@ -348,6 +351,16 @@ class MainActivity : AppCompatActivity() {
     //Funciones con un valor de retorno
     fun sumarDosNumeros(primerNumero : Int, segundoNumero : Int) : Int{
          return primerNumero + segundoNumero
+    }
+
+    //Aqui vamos a Hablar de clases
+    fun clases(){
+        val brais  = Programmer("Brais", 32, arrayOf(Programmer.Language.KOTLIN, Programmer.Language.JAVA))
+        println(brais.name)
+        brais.age=24
+        val sara = Programmer("Sara",25 , arrayOf(Programmer.Language.JAVASCRIPT), arrayOf(brais))
+        sara.code()
+        println("${sara.friends.first()} es amigo de ${sara.name}")
     }
 
 }
