@@ -37,4 +37,7 @@ class MainActivity : AppCompatActivity() {
         val mySecondConstant = myFirstVariable
         println(mySecondConstant)
     }
+
+
+    val string = "Hola Mundo"
 }
