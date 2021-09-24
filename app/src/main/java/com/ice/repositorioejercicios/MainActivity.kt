@@ -89,12 +89,17 @@ class MainActivity : AppCompatActivity() {
         // >= Menor o igual que
         // == Igualdad
         // != Desigual
-        if(myNumber <= 10){ç
+        if(!(myNumber <= 10 && myNumber > 5) || (myNumber==53)){
             //Sentencia if
-            println("$myNumber es menor que 10")
-        }else{
+            println("$myNumber es menor que 10 y mayor que 5 o es igual a 53")
+        }else if(myNumber == 60){
+            println("$myNumber es igual a 60")
+        }else if(myNumber !=70){
+            println("$myNumber No es igual a 70")
+        }
+        else{
             //Sentencia Else
-            println("$myNumber es mayor que 10")
+            println("$myNumber es mayor que 10 o menor o igual que 5 y no es igual a 53")
         }
     }
 }
