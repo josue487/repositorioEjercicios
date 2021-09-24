@@ -12,7 +12,9 @@ class MainActivity : AppCompatActivity() {
         //Leccion 2 :D
         //tiposDeDatos()
         //Leccion 3
-        sentenciaIf()
+        //sentenciaIf()
+        //Leccion 4
+        sentenciaWhen()
     }
 
     /*
@@ -101,5 +103,49 @@ class MainActivity : AppCompatActivity() {
             //Sentencia Else
             println("$myNumber es mayor que 10 o menor o igual que 5 y no es igual a 53")
         }
+    }
+
+    /*
+    Aqui vamos a hablar de la sentencia when
+     */
+    private fun sentenciaWhen(){
+        //When con String
+        val country = "España"
+        when(country){
+            "España"->{
+                println("El Idioma es Español")
+            } "Mexico" ->{
+                   println("El Idioma es Español")
+            } "Peru" ->{
+                   println("El Idioma es Español")
+            } "Argentina" ->{
+                   println("El Idioma es Español")
+            } "EEUU" ->{
+                   println("El Idioma es Ingles")
+            } "Francia" -> {
+                  println("El Idioma es Frances")
+            } else ->{
+            println("No Conocemos el Idioma")
+            }
+        }
+
+        //When con Int
+        val age = 10
+        when(age){
+            0, 1, 2-> {
+                "Eres un bebe"
+            } in 3 .. 10 -> {
+                "Eres un niño"
+            } in 11 .. 17 -> {
+                "Eres un Adolecente"
+            } in 18 .. 69 -> {
+                "Eres un adulto"
+            } in 70 .. 99 -> {
+                "Eres Anciano"
+            } else -> {
+                println(":D")
+            }
+        }
+
     }
 }
