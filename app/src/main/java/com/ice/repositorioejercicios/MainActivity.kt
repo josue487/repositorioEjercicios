@@ -21,7 +21,10 @@ class MainActivity : AppCompatActivity() {
         //sentenciaWhen()
 
         //Leccion 5
-        arrays()
+        //arrays()
+
+        //Leccion 6
+        maps()
     }
 
     /*
@@ -205,6 +208,38 @@ class MainActivity : AppCompatActivity() {
         myArray.first()
         myArray.last()
         myArray.sort()
-        
+
+    }
+/*
+      Aqui vamos a hablar de mapas, tambien llamados diccionarios
+ */
+    private fun maps(){
+    //Sintaxis
+      var myMap : Map<String, Int> = mapOf()
+      println(myMap)
+    //Añadir Elementos
+    //myMap = mapOf("Brais" to 1, "Pedro" to 2, "Sara" to 5)
+    myMap = mutableMapOf("Brais" to 1, "Pedro" to 2, "Sara" to 5)
+    println(myMap)
+
+    //Añadir un solo valor
+    myMap["Ana"] = 7
+    myMap.put("Maria" , 8)
+    println(myMap)
+
+    //Actualizacion de un Dato
+    myMap.put("Brais", 3)
+    myMap["Brais"] = 4
+    println(myMap)
+
+    myMap.put("Marcos", 3)
+    println(myMap)
+
+    //acceso a un dato
+    println(myMap["Brais"])
+
+    // eliminacion de un dato
+    myMap.remove("Brais")
+    println(myMap)
     }
 }
