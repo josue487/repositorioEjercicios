@@ -7,8 +7,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //Leccion 1
         //variablesYConstantes()
-        tiposDeDatos()
+        //Leccion 2 :D
+        //tiposDeDatos()
+        //Leccion 3
+        sentenciaIf()
     }
 
     /*
@@ -71,5 +75,26 @@ class MainActivity : AppCompatActivity() {
        println(myBool == myBool2)
        println(myBool && myBool2)
        println(myBool || myBool2)
+    }
+
+    /*
+    Aqui vamos a hablar de sentencia if
+     */
+    private fun sentenciaIf(){
+        val myNumber = 12
+        //Operadores Condicionales
+        //> Mayor
+        //< Menor
+        // >= Mayor o Igual que
+        // >= Menor o igual que
+        // == Igualdad
+        // != Desigual
+        if(myNumber <= 10){ç
+            //Sentencia if
+            println("$myNumber es menor que 10")
+        }else{
+            //Sentencia Else
+            println("$myNumber es mayor que 10")
+        }
     }
 }
