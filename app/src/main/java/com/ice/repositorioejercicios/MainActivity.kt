@@ -7,7 +7,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        variablesYConstantes()
+        //variablesYConstantes()
+        tiposDeDatos()
     }
 
     /*
@@ -38,6 +39,37 @@ class MainActivity : AppCompatActivity() {
         println(mySecondConstant)
     }
 
+   /*
+   Aqui vamos a hablar de tipos de datos
+    */
+    private fun tiposDeDatos(){
+        //String
 
-    val string = "Hola Mundo"
+       val myString : String = "Hola Peter"
+       val myString2 = "Bienvenido"
+       val myString3 = myString + " " + myString2
+
+       // Enteros (Byte, Short, Int, Long)
+
+       val myInt : Int = 1
+       val myInt2 = 2
+       val myInt3 = myInt + myInt2
+       println(myInt3)
+
+       // Decimales (Float, Double)
+       val myDouble = 1.5
+       val myFloat = 1.5f
+       val myDouble2 = 2.6
+       val myDouble3 : Int = 1 //En realidad este es Int
+       val myDouble4 = myDouble + myDouble2 + myDouble3
+       println(myDouble4)
+
+       //Boolean (bool)
+       val myBool = true
+       val myBool2 = false
+       //val myBool3 = myBool + myBool2
+       println(myBool == myBool2)
+       println(myBool && myBool2)
+       println(myBool || myBool2)
+    }
 }
