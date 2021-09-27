@@ -8,7 +8,9 @@ class AndroidMedioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_android_medio2)
         //Enum Clases
-        enumClases()
+        //enumClases()
+        // Nested and Inner Class
+        nestedAndInnerClasses()
     }
 
     //Leccion 1 Kotlin Intermedio : Enum Clases
@@ -53,4 +55,18 @@ class AndroidMedioActivity : AppCompatActivity() {
         println(userDireccion.dir)
     }
 
+    //Leccion 2 Nested and Inner Classes
+    private fun nestedAndInnerClasses(){
+        //Clase Anidada (nested)
+        val myNestedClass = MyNestedAndInnerClass.MyNestedClass()
+        val sum = myNestedClass.sum(10,5)
+        println("El resultado de la suma es: $sum")
+
+        //Clase Interna (inner)
+        val myInnerClass = MyNestedAndInnerClass().MyInnerClass()
+        val sum2 = myInnerClass.sumTwo(10)
+        println("El resultado de sumar 2 es $sum2")
+    }
+
+    
 }
