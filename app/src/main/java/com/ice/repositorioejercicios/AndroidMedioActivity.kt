@@ -7,10 +7,15 @@ class AndroidMedioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_android_medio2)
+
         //Enum Clases
         //enumClases()
+
         // Nested and Inner Class
-        nestedAndInnerClasses()
+        //nestedAndInnerClasses()
+
+        //Class Inheritance
+        classInheritance()
     }
 
     //Leccion 1 Kotlin Intermedio : Enum Clases
@@ -68,5 +73,14 @@ class AndroidMedioActivity : AppCompatActivity() {
         println("El resultado de sumar 2 es $sum2")
     }
 
-    
+    //Leccion 3 class InherItance (Herencia)
+    private fun classInheritance(){
+        val programmer = Programador("Brais",33, "Kotlin")
+        programmer.work()
+        programmer.sayLenguaje()
+        programmer.goToWork()
+        val designer = Diseñador("Juan", 30)
+        designer.work()
+        designer.goToWork()
+    }
 }
