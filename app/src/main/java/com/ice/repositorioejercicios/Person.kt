@@ -1,6 +1,6 @@
 package com.ice.repositorioejercicios
 
-open class Person (name : String, age : Int) : Work(){
+open class Person (name : String, age : Int) : Work(), Game{
 
     //Cualquier clase tiene una superclase común "Any"
 
@@ -11,4 +11,17 @@ open class Person (name : String, age : Int) : Work(){
     override fun goToWork() {
         println("Esta persona va al trabajo")
     }
+
+//    override val game: String
+//        get() = "Amoung Us"
+
+    override val game: String = "Amoung Us"
+
+    override fun play() {
+        println("Esta persona esta jugando a $game")
+    }
+
+ //   override fun stream() {
+ //       super.stream()
+ //   }
 }

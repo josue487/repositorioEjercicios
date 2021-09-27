@@ -15,8 +15,12 @@ class AndroidMedioActivity : AppCompatActivity() {
         //nestedAndInnerClasses()
 
         //Class Inheritance
-        classInheritance()
+        //classInheritance()
+
+        //Interfaces
+        interfaces()
     }
+
 
     //Leccion 1 Kotlin Intermedio : Enum Clases
 
@@ -82,5 +86,12 @@ class AndroidMedioActivity : AppCompatActivity() {
         val designer = Diseñador("Juan", 30)
         designer.work()
         designer.goToWork()
+    }
+
+    //leccion 4 Interfaces
+    private fun interfaces() {
+        val gamer = Person ("Brais", 3)
+        gamer.play()
+        gamer.stream()
     }
 }
