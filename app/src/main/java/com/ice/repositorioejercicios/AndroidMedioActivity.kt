@@ -18,7 +18,10 @@ class AndroidMedioActivity : AppCompatActivity() {
         //classInheritance()
 
         //Interfaces
-        interfaces()
+        //interfaces()
+
+        //Visivility modifiers
+        visivilityModifiers()
     }
 
 
@@ -94,4 +97,16 @@ class AndroidMedioActivity : AppCompatActivity() {
         gamer.play()
         gamer.stream()
     }
+
+    //Leccion 5 Visibility Modifiers
+
+    //sin declarar por defecto public
+    private fun visivilityModifiers(){
+        //val visibility = Visibility()
+        //visibility.name="Brais"
+        //visibility.sayMyName()
+        val visibilityTwo = VisibilityTwo()
+        visibilityTwo.sa
+    }
+
 }
