@@ -255,6 +255,8 @@ class MainActivity : AppCompatActivity() {
     println(myMap)
     }
 
+    //Aqui vamos a hablar de bucles
+
     private fun loops(){
         //Bucles
         val myArray : List<String> = listOf("Hola" , "Bienvenidos al Tutorial", "Suscribete" ,)
