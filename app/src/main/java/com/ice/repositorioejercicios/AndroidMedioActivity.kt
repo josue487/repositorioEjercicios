@@ -32,7 +32,10 @@ class AndroidMedioActivity : AppCompatActivity() {
         //dataClasses()
 
         //Type Aliases
-        typeAliases()
+        //typeAliases()
+
+        //Destructuring Declarations
+        destructuringDeclaration()
     }
 
 
@@ -166,5 +169,27 @@ class AndroidMedioActivity : AppCompatActivity() {
         myNewMap[1] = arrayListOf("Brais" , "Moure")
         myNewMap[2] = arrayListOf("MoureDev" , "By Brais Moure")
         myMap = myNewMap
+    }
+
+
+    //Leccion 8 : Destructuring Declaration
+    private  fun  destructuringDeclaration(){
+        val (name, _, work) = Worker("Brais Moure", 34 , "Programador")
+        println("$name, $work")
+        val moureDev = Worker("MoureDev", 34 , "Programador")
+        println(moureDev.component1())
+        val (braisName, braisAge) = myWorker()
+        println("$braisName, $braisAge")
+        val myMap = mapOf(1 to "Brais", 2 to "Pedro", 5 to "Sara")
+//        for (element in myMap){
+//            println("${element.component1()}, ${element.component2()}")
+//        }
+        for ((id, name) in myMap){
+            println("${id}, ${name}")
+        }
+    }
+
+    private fun myWorker() : Worker{
+        return Worker("Brais Moure", 34 , "Programador")
     }
 }
