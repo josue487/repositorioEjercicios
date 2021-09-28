@@ -21,7 +21,10 @@ class AndroidMedioActivity : AppCompatActivity() {
         //interfaces()
 
         //Visivility modifiers
-        visivilityModifiers()
+        //visivilityModifiers()
+
+        //Data Classes
+        dataClasses()
     }
 
 
@@ -106,7 +109,41 @@ class AndroidMedioActivity : AppCompatActivity() {
         //visibility.name="Brais"
         //visibility.sayMyName()
         val visibilityTwo = VisibilityTwo()
-        visibilityTwo.sa
+
     }
 
+    //Leccion 6 : Data Classes
+    private  fun dataClasses(){
+
+        val brais = Worker("Brais Moure", 33 , "Programador")
+        brais.lastWork="Musico"
+
+        val sara = Worker()
+
+        val moureDev = Worker("Brais Moure", 33 , "Programador")
+        brais.lastWork="Musico"
+
+        //equals y hasCode
+//        if (brais.equals(moureDev)){   O
+        if (brais==moureDev){
+            println("Son Iguales")
+        }
+        else{
+            println("No son Iguales")
+        }
+
+        //To String
+        println(brais.toString())
+
+        //Copy
+        val brais2 = brais.copy(age = 34)
+        println(brais.toString())
+        println(brais2.toString())
+
+        //ComponentN
+        val (name, age) = moureDev
+        println(name)
+        println(age)
+        
+    }
 }
