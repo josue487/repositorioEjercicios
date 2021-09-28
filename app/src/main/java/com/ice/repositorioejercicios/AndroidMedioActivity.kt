@@ -2,6 +2,8 @@ package com.ice.repositorioejercicios
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import java.util.*
+import kotlin.collections.ArrayList
 
 //Alias
 typealias MyMapList = MutableMap<Int, ArrayList<String>>
@@ -35,7 +37,10 @@ class AndroidMedioActivity : AppCompatActivity() {
         //typeAliases()
 
         //Destructuring Declarations
-        destructuringDeclaration()
+        //destructuringDeclaration()
+
+        //Extensions
+        extensions()
     }
 
 
@@ -191,5 +196,17 @@ class AndroidMedioActivity : AppCompatActivity() {
 
     private fun myWorker() : Worker{
         return Worker("Brais Moure", 34 , "Programador")
+    }
+
+    //Leccion 9 : Extensions
+    private  fun extensions(){
+        val myDate = Date()
+        //Creado Custom Format en Extensions
+        println(myDate.customFormat())
+        println(myDate.formatSize)
+
+        val myDateNullable : Date? = null
+        println(myDateNullable.customFormat())
+        println(myDateNullable.formatSize)
     }
 }
