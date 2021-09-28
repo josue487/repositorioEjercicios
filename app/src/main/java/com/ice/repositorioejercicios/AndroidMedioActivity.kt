@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import java.util.*
 import kotlin.collections.ArrayList
+import kotlin.concurrent.thread
 
 //Alias
 typealias MyMapList = MutableMap<Int, ArrayList<String>>
@@ -40,7 +41,11 @@ class AndroidMedioActivity : AppCompatActivity() {
         //destructuringDeclaration()
 
         //Extensions
-        extensions()
+        //extensions()
+
+        //Lambdas
+        lambdas()
+
     }
 
 
@@ -208,5 +213,59 @@ class AndroidMedioActivity : AppCompatActivity() {
         val myDateNullable : Date? = null
         println(myDateNullable.customFormat())
         println(myDateNullable.formatSize)
+    }
+
+    //Leccion 10 Lambdas
+    private fun lambdas(){
+        val myIntList = arrayListOf<Int>(0,1,2,3,4,5,6,7,8,9,10)
+
+        val myFilterIntList = myIntList.filter { myInt ->
+            println(myInt)
+            if(myInt==1){
+                return@filter true
+            }
+            myInt > 5
+        }
+        println(myFilterIntList)
+
+ //       val mySumFun = fun (x:Int, y:Int) : Int{ OPCION LARGA MUCHAS LINEAS DE CODIGO
+ //           return x+y
+ //       }
+
+        val mySumFun = fun (x:Int, y:Int) : Int = x+y  //OPCION CORTA 1 LINEA DE CODIGO
+        val myMultFun = fun(x:Int, y:Int): Int = x*y
+
+        myAsyncFun("MoureDev"){
+            println(it)
+        }
+
+        println(myOperateFun(5,10,mySumFun))
+        println(myOperateFun(5,10,myMultFun))
+        println(myOperateFun(5,10) { x, y -> x-y })
+
+    }
+
+    private  fun myOperateFun(x:Int , y: Int, myFun : (Int, Int) -> Int ) : Int{
+        return myFun(x,y)
+    }
+
+    //Funcion Asincronica
+    private fun myAsyncFun(name : String, hello:(String) -> Unit){
+        val myNewString="Hello $name"
+        //Hilo
+        thread {
+            Thread.sleep(5000)
+            hello(myNewString)
+        }
+
+        thread {
+            Thread.sleep(1000)
+            hello(myNewString)
+        }
+
+        thread {
+            Thread.sleep(7000)
+            hello(myNewString)
+        }
     }
 }
