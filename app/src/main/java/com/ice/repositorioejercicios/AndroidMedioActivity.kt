@@ -3,6 +3,11 @@ package com.ice.repositorioejercicios
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+//Alias
+typealias MyMapList = MutableMap<Int, ArrayList<String>>
+typealias MyFun = (Int, String, MyMapList) -> Boolean  //Sin explicar
+typealias MyNestedClass = MyNestedAndInnerClass.MyNestedClass
+
 class AndroidMedioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +29,10 @@ class AndroidMedioActivity : AppCompatActivity() {
         //visivilityModifiers()
 
         //Data Classes
-        dataClasses()
+        //dataClasses()
+
+        //Type Aliases
+        typeAliases()
     }
 
 
@@ -73,7 +81,10 @@ class AndroidMedioActivity : AppCompatActivity() {
     //Leccion 2 Nested and Inner Classes
     private fun nestedAndInnerClasses(){
         //Clase Anidada (nested)
-        val myNestedClass = MyNestedAndInnerClass.MyNestedClass()
+
+//        val myNestedClass = MyNestedClass() //CON ALIAS
+
+        val myNestedClass = MyNestedAndInnerClass.MyNestedClass() //SIN ALIAS
         val sum = myNestedClass.sum(10,5)
         println("El resultado de la suma es: $sum")
 
@@ -144,6 +155,16 @@ class AndroidMedioActivity : AppCompatActivity() {
         val (name, age) = moureDev
         println(name)
         println(age)
-        
+
+    }
+
+    // Leccion 7 : Type Aliases (Alias)
+//    private var myMap : MutableMap<Int, ArrayList<String>> = mutableMapOf() ANTES de Alias
+    private var myMap : MyMapList = mutableMapOf()  //Despues de Alias
+    private fun typeAliases(){
+        var myNewMap : MyMapList = mutableMapOf()
+        myNewMap[1] = arrayListOf("Brais" , "Moure")
+        myNewMap[2] = arrayListOf("MoureDev" , "By Brais Moure")
+        myMap = myNewMap
     }
 }
