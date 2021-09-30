@@ -1,7 +1,9 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ice.repositorioejercicios.R
+import com.ice.repositorioejercicios.clases.Programmer
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

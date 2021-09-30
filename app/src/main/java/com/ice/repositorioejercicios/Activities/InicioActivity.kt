@@ -1,0 +1,34 @@
+package com.ice.repositorioejercicios.Activities
+
+import android.content.Intent
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import com.ice.repositorioejercicios.R
+
+
+class InicioActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_inicio)
+    }
+
+    //Inicio de Actividad Basica
+    fun actividadNivelBasica(v : View){
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+    //Inicio de Actividad Nivel Medio
+    fun actividadNivelMedio(v : View){
+        val intent = Intent(this, AndroidMedioActivity::class.java)
+        startActivity(intent)
+    }
+
+    //Inicio de Actividad ReciclerView
+    fun actividadReciclerView(v : View){
+        val intent = Intent(this, ReciclerViewActivity::class.java)
+        startActivity(intent)
+    }
+
+}

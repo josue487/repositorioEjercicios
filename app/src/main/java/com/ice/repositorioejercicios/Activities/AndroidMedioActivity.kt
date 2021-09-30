@@ -1,7 +1,14 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ice.repositorioejercicios.clases.MyNestedAndInnerClass
+import com.ice.repositorioejercicios.R
+import com.ice.repositorioejercicios.clases.*
+import com.ice.repositorioejercicios.clases.dataClases.Worker
+import com.ice.repositorioejercicios.clases.openClases.Person
+import com.ice.repositorioejercicios.customFormat
+import com.ice.repositorioejercicios.formatSize
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
@@ -75,10 +82,10 @@ class AndroidMedioActivity : AppCompatActivity() {
         var userDireccion : Direccion? = null
         println("Direccion : $userDireccion")
 
-        userDireccion=Direccion.SOUTH
+        userDireccion= Direccion.SOUTH
         println("Direccion : $userDireccion")
 
-        userDireccion=Direccion.WEST
+        userDireccion= Direccion.WEST
         println("Direccion : $userDireccion")
 
         println("Propiedad name : ${userDireccion.name}")
@@ -95,9 +102,10 @@ class AndroidMedioActivity : AppCompatActivity() {
     private fun nestedAndInnerClasses(){
         //Clase Anidada (nested)
 
-//        val myNestedClass = MyNestedClass() //CON ALIAS
-
+        //val myNestedClass = MyNestedClass() //CON ALIAS
         val myNestedClass = MyNestedAndInnerClass.MyNestedClass() //SIN ALIAS
+
+
         val sum = myNestedClass.sum(10,5)
         println("El resultado de la suma es: $sum")
 
@@ -199,7 +207,7 @@ class AndroidMedioActivity : AppCompatActivity() {
         }
     }
 
-    private fun myWorker() : Worker{
+    private fun myWorker() : Worker {
         return Worker("Brais Moure", 34 , "Programador")
     }
 
@@ -213,6 +221,7 @@ class AndroidMedioActivity : AppCompatActivity() {
         val myDateNullable : Date? = null
         println(myDateNullable.customFormat())
         println(myDateNullable.formatSize)
+
     }
 
     //Leccion 10 Lambdas

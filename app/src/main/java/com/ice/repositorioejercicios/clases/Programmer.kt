@@ -1,6 +1,6 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.clases
 
-class Programmer(val name : String,var age : Int,val languages : Array<Language>, val friends : Array<Programmer>? = null) {
+class Programmer(val name : String, var age : Int, val languages : Array<Language>, val friends : Array<Programmer>? = null) {
 
     fun code(){
         for(language : Language in languages){

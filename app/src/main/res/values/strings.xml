@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">repositorioEjercicios</string>
+    <string name="android_kotlin_basico">Android Kotlin Basico</string>
+    <string name="android_kotlin_medio">Android Kotlin Medio</string>
+    <string name="solo_se_ven_los_resultados_por_consola">Solo se ven los Resultados Por Consola</string>
+    <string name="actividades_visibles_en_ejecucion">Actividades Visibles en Ejecucion</string>
+    <string name="reciclerview">ReciclerView</string>
 </resources>

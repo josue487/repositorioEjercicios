@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.interfaces
 
 interface Game {
     val game : String

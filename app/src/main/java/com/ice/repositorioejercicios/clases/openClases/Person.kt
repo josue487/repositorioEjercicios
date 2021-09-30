@@ -1,6 +1,9 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.clases.openClases
 
-open class Person (name : String, age : Int) : Work(), Game{
+import com.ice.repositorioejercicios.clases.abstractClases.Work
+import com.ice.repositorioejercicios.interfaces.Game
+
+open class Person (name : String, age : Int) : Work(), Game {
 
     //Cualquier clase tiene una superclase común "Any"
 

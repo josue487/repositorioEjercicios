@@ -1,7 +1,9 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.clases
 
 class MyNestedAndInnerClass {
 
+    //Funciona solo con inner class
+    //No funciona con clase anidada
     private val one = 1
     private fun returnOne() :Int{
         return one

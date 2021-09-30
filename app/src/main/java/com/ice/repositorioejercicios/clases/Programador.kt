@@ -1,4 +1,7 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.clases
+
+import com.ice.repositorioejercicios.clases.openClases.Person
+import com.ice.repositorioejercicios.interfaces.Vehicle
 
 class Programador (name : String, age : Int , val lenguaje : String ) : Person(name,age) , Vehicle {
 

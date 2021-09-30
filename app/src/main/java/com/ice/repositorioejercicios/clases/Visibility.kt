@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.clases
 
 private class Visibility {
     var name : String? = null
@@ -21,7 +21,7 @@ open class VisibilityTwo{
 }
 
 
-class VisibilityThree : VisibilityTwo (){
+class VisibilityThree : VisibilityTwo(){
     internal val age : Int? = null
     fun sayMyNameThree(){
         sayMyNameTwo()
