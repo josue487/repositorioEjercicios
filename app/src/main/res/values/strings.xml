@@ -5,4 +5,7 @@
     <string name="solo_se_ven_los_resultados_por_consola">Solo se ven los Resultados Por Consola</string>
     <string name="actividades_visibles_en_ejecucion">Actividades Visibles en Ejecucion</string>
     <string name="reciclerview">ReciclerView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="viewpage">ViewPage</string>
 </resources>

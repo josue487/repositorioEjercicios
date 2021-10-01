@@ -5,10 +5,10 @@ import android.os.Bundle
 import com.ice.repositorioejercicios.R
 import com.ice.repositorioejercicios.clases.Programmer
 
-class MainActivity : AppCompatActivity() {
+class KotlinBasicoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_kotlin_basico)
 
         //Leccion 1
         //variablesYConstantes()

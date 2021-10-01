@@ -23,8 +23,11 @@ class HeroAdapter (val superHeroList : List<SuperHero>) : RecyclerView.Adapter<H
         holder.render(superHeroList[position] )
     }
 
+
+
     override fun getItemCount(): Int =  superHeroList.size
 
+//Glide
 
     class HeroHolder(val view : View) : RecyclerView.ViewHolder(view){
         val superheroName = view.findViewById(R.id.tvSuperHeroName) as TextView

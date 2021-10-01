@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
         app:layout_constraintVertical_bias="0.0"
-         />
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView2"
@@ -83,5 +83,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMedio"
-        app:layout_constraintVertical_bias="0.808" />
+        app:layout_constraintVertical_bias="0.808"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnViewPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/viewpage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.018"
+        android:onClick="actividadViewPage"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

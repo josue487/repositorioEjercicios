@@ -15,7 +15,7 @@ class InicioActivity : AppCompatActivity() {
 
     //Inicio de Actividad Basica
     fun actividadNivelBasica(v : View){
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, KotlinBasicoActivity::class.java)
         startActivity(intent)
     }
 
@@ -31,4 +31,9 @@ class InicioActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    //Inicio de Actividad ViewPage
+    fun actividadViewPage(v : View){
+        val intent = Intent(this, ViewPageActivityTest::class.java)
+        startActivity(intent)
+    }
 }
