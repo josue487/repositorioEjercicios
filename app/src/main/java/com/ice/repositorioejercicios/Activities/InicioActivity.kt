@@ -36,4 +36,10 @@ class InicioActivity : AppCompatActivity() {
         val intent = Intent(this, ViewPageActivityTest::class.java)
         startActivity(intent)
     }
+
+    //Inicio de Actividad DateTimePicker
+    fun actividadPicker(v : View){
+        val intent = Intent(this, PickerActivity::class.java)
+        startActivity(intent)
+    }
 }

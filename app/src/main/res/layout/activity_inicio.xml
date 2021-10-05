@@ -76,27 +76,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="388dp"
-        android:text="@string/reciclerview"
         android:onClick="actividadReciclerView"
+        android:text="@string/reciclerview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMedio"
-        app:layout_constraintVertical_bias="0.808"
+        app:layout_constraintVertical_bias="0.661"
         tools:ignore="UsingOnClickInXml" />
 
     <Button
         android:id="@+id/btnViewPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginBottom="360dp"
+        android:onClick="actividadViewPage"
         android:text="@string/viewpage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.018"
-        android:onClick="actividadViewPage"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnDateTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Time Picker"
+        android:onClick="actividadPicker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPage"
+        app:layout_constraintVertical_bias="0.034" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

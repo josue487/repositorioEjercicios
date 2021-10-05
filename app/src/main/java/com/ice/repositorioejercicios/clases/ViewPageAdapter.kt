@@ -10,7 +10,7 @@ class ViewPageAdapter(fragmentActivity : FragmentActivity) : FragmentStateAdapte
 
     private val ARG_OBJECT = "Object"
 
-    override fun getItemCount(): Int = 48
+    override fun getItemCount(): Int = 4
 
     override fun createFragment(position: Int): Fragment {
         //Metodo para cantidades conocidas
