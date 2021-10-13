@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.clases
+package com.ice.repositorioejercicios.Clases
 
 private class Visibility {
     var name : String? = null

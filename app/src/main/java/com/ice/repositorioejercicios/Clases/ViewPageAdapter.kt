@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.clases
+package com.ice.repositorioejercicios.Clases
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

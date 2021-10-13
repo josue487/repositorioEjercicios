@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/contenedor"
-    tools:context=".ResultActivity">
+    tools:context=".Activities.ResultActivity">
 
     <TextView
         android:id="@+id/tvNombre"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNombre"
-        tools:text="Cerrar Sesión"
+        android:text="Cerrar Sesión"
         android:onClick="cerrarSecion"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.clases
+package com.ice.repositorioejercicios.Clases
 
 import android.app.Application
 
@@ -10,10 +10,10 @@ class UserVipApplication : Application() {
     }
 
 
-
     override fun onCreate() {
-        
         super.onCreate()
         prefs  = Prefs(applicationContext)
     }
+
+
 }

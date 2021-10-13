@@ -2,11 +2,11 @@ package com.ice.repositorioejercicios.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ice.repositorioejercicios.clases.MyNestedAndInnerClass
+import com.ice.repositorioejercicios.Clases.MyNestedAndInnerClass
 import com.ice.repositorioejercicios.R
-import com.ice.repositorioejercicios.clases.*
-import com.ice.repositorioejercicios.clases.dataClases.Worker
-import com.ice.repositorioejercicios.clases.openClases.Person
+import com.ice.repositorioejercicios.Clases.*
+import com.ice.repositorioejercicios.Clases.dataClases.Worker
+import com.ice.repositorioejercicios.Clases.openClases.Person
 import com.ice.repositorioejercicios.customFormat
 import com.ice.repositorioejercicios.formatSize
 import java.util.*

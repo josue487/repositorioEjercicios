@@ -1,7 +1,7 @@
-package com.ice.repositorioejercicios.clases.openClases
+package com.ice.repositorioejercicios.Clases.openClases
 
-import com.ice.repositorioejercicios.clases.abstractClases.Work
-import com.ice.repositorioejercicios.interfaces.Game
+import com.ice.repositorioejercicios.Clases.abstractClases.Work
+import com.ice.repositorioejercicios.Interfaces.Game
 
 open class Person (name : String, age : Int) : Work(), Game {
 

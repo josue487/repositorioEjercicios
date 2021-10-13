@@ -21,14 +21,14 @@ get() = this.customFormat()?.length ?: 0
 
 
 //Para Shared Preferences
-fun SharedPreferences.guardarNombre (key:String, nombre:String){
+fun SharedPreferences.guardarNombre(key:String, nombre:String){
     this.edit().putString(key, nombre).apply()
 }
 
-fun SharedPreferences.guardarBooleano (key:String, vip:Boolean){
+fun SharedPreferences.guardarBooleano(key:String, vip:Boolean){
     this.edit().putBoolean(key, vip).apply()
 }
 
-fun SharedPreferences.limpiarPreferencias (){
+fun SharedPreferences.limpiarPreferencias(){
     this.edit().clear().apply()
 }

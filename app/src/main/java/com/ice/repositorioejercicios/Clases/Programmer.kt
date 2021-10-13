@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.clases
+package com.ice.repositorioejercicios.Clases
 
 class Programmer(val name : String, var age : Int, val languages : Array<Language>, val friends : Array<Programmer>? = null) {
 

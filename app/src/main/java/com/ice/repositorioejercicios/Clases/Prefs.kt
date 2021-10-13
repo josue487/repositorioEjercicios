@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.clases
+package com.ice.repositorioejercicios.Clases
 
 import android.content.Context
 import com.ice.repositorioejercicios.guardarBooleano

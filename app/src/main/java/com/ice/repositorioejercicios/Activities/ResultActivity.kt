@@ -1,13 +1,13 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import com.ice.repositorioejercicios.clases.UserVipApplication.Companion.prefs
+import com.ice.repositorioejercicios.Clases.UserVipApplication.Companion.prefs
+import com.ice.repositorioejercicios.R
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,13 +22,14 @@ class ResultActivity : AppCompatActivity() {
         tvNombre.text = "Bienvenido ${prefs.getNombre()}"
         if (prefs.getVip()){
             setVipColorBackGround()
+            tvNombre.setBackgroundColor(ContextCompat.getColor(this, R.color.Yellow))
         }
     }
 
 
     fun setVipColorBackGround(){
         val contenedor = this.findViewById(R.id.contenedor) as ConstraintLayout
-        contenedor.setBackgroundColor(ContextCompat.getColor(this,R.color.black))
+        contenedor.setBackgroundColor(ContextCompat.getColor(this, R.color.Yellow))
     }
 
     fun cerrarSecion(view: View) {

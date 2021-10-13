@@ -3,18 +3,14 @@ package com.ice.repositorioejercicios.Activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.ice.repositorioejercicios.R
-import com.ice.repositorioejercicios.clases.ViewPageAdapter
-import me.relex.circleindicator.CircleIndicator
-import me.relex.circleindicator.CircleIndicator2
+import com.ice.repositorioejercicios.Clases.ViewPageAdapter
 import me.relex.circleindicator.CircleIndicator3
 
 class ViewPageActivityTest : AppCompatActivity() {

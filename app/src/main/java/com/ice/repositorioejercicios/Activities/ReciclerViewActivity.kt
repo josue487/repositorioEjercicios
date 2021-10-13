@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ice.repositorioejercicios.R
-import com.ice.repositorioejercicios.clases.HeroAdapter
-import com.ice.repositorioejercicios.clases.dataClases.SuperHero
+import com.ice.repositorioejercicios.Clases.HeroAdapter
+import com.ice.repositorioejercicios.Clases.dataClases.SuperHero
 
 class ReciclerViewActivity : AppCompatActivity() {
 

@@ -1,6 +1,6 @@
-package com.ice.repositorioejercicios.clases
+package com.ice.repositorioejercicios.Clases
 
-import com.ice.repositorioejercicios.clases.openClases.Person
+import com.ice.repositorioejercicios.Clases.openClases.Person
 
 class Diseñador(name : String, age : Int) : Person(name,age){
     override fun work(){

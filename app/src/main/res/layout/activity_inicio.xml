@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_red_light"
-    tools:context=".Activities.InicioActivity">
+    tools:context=".Inicio.InicioActivity">
 
     <Button
         android:id="@+id/btnBasico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
-        android:onClick="actividadNivelBasica"
+        android:background="@color/black"
+        android:onClick="initActivityNivelBasico"
         android:text="@string/android_kotlin_basico"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UsingOnClickInXml" />
@@ -23,7 +25,7 @@
         android:id="@+id/btnMedio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="actividadNivelMedio"
+        android:onClick="initActivityçNivelMedio"
         android:text="@string/android_kotlin_medio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="388dp"
-        android:onClick="actividadReciclerView"
+        android:onClick="initActivityReciclerView"
         android:text="@string/reciclerview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="360dp"
-        android:onClick="actividadViewPage"
+        android:onClick="initActivityViewPage"
         android:text="@string/viewpage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date Time Picker"
-        android:onClick="actividadPicker"
+        android:onClick="initActivityPicker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -117,7 +119,7 @@
         android:id="@+id/btnWebView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="btnWebView"
+        android:onClick="initActivityWebView"
         android:text="WebView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,7 +141,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnWebView"
-        android:onClick="btnSharedPreferences"/>
+        android:onClick="initActivitySharedPreferences"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
