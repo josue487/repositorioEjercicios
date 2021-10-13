@@ -1,11 +1,15 @@
 package com.ice.repositorioejercicios.Activities
 
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import com.ice.repositorioejercicios.DatePickerFragment
 import com.ice.repositorioejercicios.R
 import com.ice.repositorioejercicios.TimePickerFragment
+import java.util.*
 
 class PickerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +22,8 @@ class PickerActivity : AppCompatActivity() {
         //Time Picker
         val etTime = this.findViewById(R.id.etTime) as EditText
         etTime.setOnClickListener{showTimePickerDialog()}
+
+        //DatePickerScroll
 
     }
 
@@ -44,4 +50,7 @@ class PickerActivity : AppCompatActivity() {
         val etTime = this.findViewById(R.id.etTime) as EditText
         etTime.setText("Has Seleccionado las $time")
     }
+
+
+
 }

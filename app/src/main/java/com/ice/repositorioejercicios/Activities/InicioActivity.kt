@@ -42,4 +42,16 @@ class InicioActivity : AppCompatActivity() {
         val intent = Intent(this, PickerActivity::class.java)
         startActivity(intent)
     }
+
+    //Inicio de Actividad WebView
+    fun btnWebView(view: View) {
+        val intent = Intent(this, WebViewActivity::class.java)
+        startActivity(intent)
+    }
+
+    //Inicio de ActividadShared Preferences
+    fun btnSharedPreferences(view: View) {
+        val intent = Intent(this, SharedPreferencesActivity::class.java)
+        startActivity(intent)
+    }
 }

@@ -21,6 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
         android:id="@+id/etDate"
         android:layout_width="match_parent"
@@ -28,14 +29,27 @@
         android:layout_margin="24dp"
         android:clickable="false"
         android:focusable="false"
-        android:hint="Selecciona el Dia"
+        android:hint="Selecciona el Dia DatePicker Comun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintVertical_bias="0.116" />
 
 
+    <TextView
+        android:id="@+id/etDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="Selecciona el Dia DatePicker Scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
 
     <EditText
         android:id="@+id/etTime"
@@ -47,9 +61,20 @@
         android:hint="Selecciona la Hora"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDate"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/btnDatePickerScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PickerScroll"
+        app:layout_constraintBottom_toTopOf="@+id/etTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDate2"
+        android:onClick=""/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
