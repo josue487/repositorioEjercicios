@@ -7,12 +7,12 @@ open class Person (name : String, age : Int) : Work(), Game {
 
     //Cualquier clase tiene una superclase común "Any"
 
-    open fun work(){
-        println("Esta persona esta trabajando")
+    open fun work() : String{
+        return "Esta persona esta trabajando"
     }
 
-    override fun goToWork() {
-        println("Esta persona va al trabajo")
+    override fun goToWork(): String {
+        return "Esta persona va al trabajo"
     }
 
 //    override val game: String
@@ -20,8 +20,8 @@ open class Person (name : String, age : Int) : Work(), Game {
 
     override val game: String = "Amoung Us"
 
-    override fun play() {
-        println("Esta persona esta jugando a $game")
+    override fun play() : String {
+        return "Esta persona esta jugando a $game"
     }
 
  //   override fun stream() {

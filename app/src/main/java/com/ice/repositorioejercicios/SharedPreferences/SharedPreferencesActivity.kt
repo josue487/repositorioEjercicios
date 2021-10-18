@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.Activities
+package com.ice.repositorioejercicios.SharedPreferences
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,40 +7,40 @@ import android.view.View
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
+import com.ice.repositorioejercicios.Result.ResultActivity
 import com.ice.repositorioejercicios.R
-import com.ice.repositorioejercicios.Clases.UserVipApplication.Companion.prefs
 
-class SharedPreferencesActivity : AppCompatActivity() {
+class SharedPreferencesActivity : AppCompatActivity(), SharedPreferencesContract.View {
+
+    val sharedPreferencesPresenter = SharedPreferencesPresenter(this,SharedPreferencesModel())
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shared_preferences)
-        checkUserValues()
+        sharedPreferencesPresenter.checkUserValues()
     }
 
-    fun checkUserValues(){
-        if(prefs.getNombre().isNotEmpty()){
+    override fun checkUserValues(existName : Boolean){
+        if(existName){
             goToDetail()
         }
     }
 
-
-
-    fun goToDetail(){
+    override fun goToDetail(){
         startActivity(Intent(this, ResultActivity::class.java))
     }
 
-    fun accederAlDetalle(view: View) {
+    override fun accederAlDetalle(view: View) {
         val etNombre = this.findViewById(R.id.etNombre) as EditText
         val cbVip = this.findViewById(R.id.cbVip) as CheckBox
         if(etNombre.text.toString().isNotEmpty()){
-            //Guardar El Usuario
-            prefs.guardarNombre(etNombre.text.toString())
-            prefs.guardarVIP(cbVip.isChecked)
+            sharedPreferencesPresenter.guardarUsuario(cbVip.isChecked,etNombre.text.toString())
             goToDetail()
         }else{
-            Toast.makeText(this,"No Tiene Nada Escrito",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Debe Completar el campo Nombre",Toast.LENGTH_SHORT).show()
         }
     }
+
 
 
 }

@@ -1,17 +1,13 @@
-package com.ice.repositorioejercicios.Activities
+package com.ice.repositorioejercicios.Picker
 
-import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.EditText
-import com.ice.repositorioejercicios.DatePickerFragment
 import com.ice.repositorioejercicios.R
-import com.ice.repositorioejercicios.TimePickerFragment
-import java.util.*
 
 class PickerActivity : AppCompatActivity() {
+
+    //No Estoy Seguro si se aplica MVP
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picker)
@@ -41,7 +37,7 @@ class PickerActivity : AppCompatActivity() {
 
     //Time Picker
     private fun showTimePickerDialog() {
-        //val timePicker = TimePickerFragment {time -> onTimeSelected(time)} Al Ser Un Solo Parametro
+
         val timePicker = TimePickerFragment {onTimeSelected(it)}
         timePicker.show(supportFragmentManager,"timePicker")
     }

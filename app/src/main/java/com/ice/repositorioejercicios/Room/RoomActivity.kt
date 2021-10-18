@@ -4,15 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ice.repositorioejercicios.R
 
-class roomActivity : AppCompatActivity() {
+class roomActivity : AppCompatActivity() , RoomContract.View{
 
-    val app = applicationContext as PersonApp
+    val roomPresenter = RoomPresenter(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room)
 
-        val people = app.room.personDao().getAll()
+        val people = roomPresenter.getAll()
 
     }
 }

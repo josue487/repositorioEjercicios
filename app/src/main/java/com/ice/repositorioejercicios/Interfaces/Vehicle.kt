@@ -1,7 +1,5 @@
 package com.ice.repositorioejercicios.Interfaces
 
 interface Vehicle {
-    fun drive(){
-
-    }
+    fun drive() : String
 }

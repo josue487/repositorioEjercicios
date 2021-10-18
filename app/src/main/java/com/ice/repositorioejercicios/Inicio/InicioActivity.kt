@@ -4,9 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.ice.repositorioejercicios.Activities.*
+import com.ice.repositorioejercicios.AndroidMedio.AndroidMedioActivity
+import com.ice.repositorioejercicios.Dagger2Activity
+import com.ice.repositorioejercicios.ReciclerView.*
 import com.ice.repositorioejercicios.KotlinBasico.KotlinBasicoActivity
+import com.ice.repositorioejercicios.Picker.PickerActivity
 import com.ice.repositorioejercicios.R
+import com.ice.repositorioejercicios.SharedPreferences.SharedPreferencesActivity
+import com.ice.repositorioejercicios.ViewPage.ViewPageActivity
+import com.ice.repositorioejercicios.WebView.WebViewActivity
 
 
 class InicioActivity : AppCompatActivity(), InicioContract.View{
@@ -22,7 +28,7 @@ class InicioActivity : AppCompatActivity(), InicioContract.View{
     }
 
     //Inicio de Actividad Nivel Medio
-    override fun initActivityçNivelMedio(v : View){
+    override fun initActivityNivelMedio(v : View){
         val intent = Intent(this, AndroidMedioActivity::class.java)
         startActivity(intent)
     }
@@ -35,7 +41,7 @@ class InicioActivity : AppCompatActivity(), InicioContract.View{
 
     //Inicio de Actividad ViewPage
     override fun initActivityViewPage(v : View){
-        val intent = Intent(this, ViewPageActivityTest::class.java)
+        val intent = Intent(this, ViewPageActivity::class.java)
         startActivity(intent)
     }
 
@@ -51,9 +57,15 @@ class InicioActivity : AppCompatActivity(), InicioContract.View{
         startActivity(intent)
     }
 
-    //Inicio de ActividadShared Preferences
+    //Inicio de Actividad Shared Preferences
     override fun initActivitySharedPreferences(view: View) {
         val intent = Intent(this, SharedPreferencesActivity::class.java)
+        startActivity(intent)
+    }
+
+    //Inicio de Actividad Dagger2 Prueba
+    override fun initActivityDagger2Prueba(view: View) {
+        val intent = Intent(this, Dagger2Activity::class.java)
         startActivity(intent)
     }
 }

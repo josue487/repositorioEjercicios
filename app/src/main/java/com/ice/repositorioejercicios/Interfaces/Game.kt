@@ -2,8 +2,8 @@ package com.ice.repositorioejercicios.Interfaces
 
 interface Game {
     val game : String
-     fun play()
-     fun stream(){
-         println("Estoy haciendo stream de mi juego $game")
+     fun play() : String
+     fun stream() : String {
+         return "Estoy haciendo stream de mi juego $game"
      }
 }

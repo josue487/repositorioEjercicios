@@ -12,15 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design">
-        <activity android:name=".Room.roomActivity"></activity>
-        <activity android:name=".Activities.ResultActivity" />
-        <activity android:name=".Activities.SharedPreferencesActivity" />
-        <activity android:name=".Activities.WebViewActivity" />
-        <activity android:name=".Activities.PickerActivity" />
-        <activity android:name=".Activities.ViewPageActivityTest" />
-        <activity android:name=".Activities.ReciclerViewActivity" />
+        <activity android:name=".Dagger2Activity"></activity>
+        <activity android:name=".Dagger2.Dagger2PruebaActivity" />
+        <activity android:name=".Room.roomActivity" />
+        <activity android:name=".Result.ResultActivity" />
+        <activity android:name=".SharedPreferences.SharedPreferencesActivity" />
+        <activity android:name=".WebView.WebViewActivity" />
+        <activity android:name=".Picker.PickerActivity" />
+        <activity android:name=".ViewPage.ViewPageActivity" />
+        <activity android:name=".ReciclerView.ReciclerViewActivity" />
         <activity android:name=".KotlinBasico.KotlinBasicoActivity" />
-        <activity android:name=".Activities.AndroidMedioActivity" />
+        <activity android:name=".ReciclerView.AndroidMedioActivity" />
         <activity android:name=".Inicio.InicioActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,5 +8,5 @@ import androidx.room.RoomDatabase
     version = 1
 )
 abstract class PeopleDB : RoomDatabase() {
-    abstract fun personDao() : PersonDao
+    abstract fun personDao() : RoomContract.Model
 }

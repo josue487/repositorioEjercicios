@@ -1,4 +1,4 @@
-package com.ice.repositorioejercicios.Activities
+package com.ice.repositorioejercicios.ViewPage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +13,7 @@ import com.ice.repositorioejercicios.R
 import com.ice.repositorioejercicios.Clases.ViewPageAdapter
 import me.relex.circleindicator.CircleIndicator3
 
-class ViewPageActivityTest : AppCompatActivity() {
+class ViewPageActivity : AppCompatActivity(), ViewPageContract.View {
 
     private val adapter by lazy{ ViewPageAdapter(this)   }
 
@@ -30,16 +30,8 @@ class ViewPageActivityTest : AppCompatActivity() {
         var indicator : CircleIndicator3 = this.findViewById<CircleIndicator3>(R.id.indicatorCircle)
         indicator.setViewPager(pager)
 
-
-        //val indicador : CircleIndicator = this.findViewById(R.id.indicatorCircle)
-        //indicador.createIndicators(4,0)
-        //indicador.animatePageSelected(0)
-
-
         val tab_layout = this.findViewById(R.id.tab_layout) as TabLayout
 
-//        linearPuntos = this.findViewById(R.id.indicatorCircle)
-        //agregarIndicadorPuntos(0)
         val tabLayoutMediator = TabLayoutMediator(tab_layout,pager,
         TabLayoutMediator.TabConfigurationStrategy{ tab, posicion ->
             tab.text = "Opcion ${posicion+1}"
@@ -53,22 +45,4 @@ class ViewPageActivityTest : AppCompatActivity() {
 
 
 
-
-
-    private fun agregarIndicadorPuntos(pos: Int) {
-        val cantidad = 4
-        linearPuntos.removeAllViews()
-
-        for (i in 1 .. cantidad){
-            puntosSlide[i] = TextView(this)
-            puntosSlide[i].setText(Html.fromHtml("&#8226"))
-            puntosSlide[i].setTextSize(35f)
-            puntosSlide[i].setTextColor(resources.getColor(R.color.black))
-            linearPuntos.addView(puntosSlide[i])
-        }
-        if(puntosSlide.size>0){
-            puntosSlide[pos].setTextColor(resources.getColor(R.color.design_default_color_on_primary))
-        }
-
-    }
 }

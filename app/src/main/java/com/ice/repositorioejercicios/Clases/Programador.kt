@@ -5,19 +5,19 @@ import com.ice.repositorioejercicios.Interfaces.Vehicle
 
 class Programador (name : String, age : Int , val lenguaje : String ) : Person(name,age) , Vehicle {
 
-    override fun work(){
-        println("Esta persona esta programando")
+    override fun work() : String{
+       return "Esta persona esta programando"
     }
 
-    fun sayLenguaje () {
-        println("Este programador usa el lenguaje de: $lenguaje")
+    fun sayLenguaje () : String {
+        return "Este programador usa el lenguaje de: $lenguaje"
     }
 
-    override fun goToWork() {
-        println("Esta persona va a google")
+    override fun goToWork() : String {
+        return "Esta persona va a google"
     }
 
-    override fun drive() {
-        println("Esta persona esta conduciendo un auto")
+    override fun drive() : String {
+        return "Esta persona esta conduciendo un auto"
     }
 }
