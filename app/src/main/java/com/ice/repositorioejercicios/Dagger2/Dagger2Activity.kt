@@ -1,9 +1,10 @@
-package com.ice.repositorioejercicios
+package com.ice.repositorioejercicios.Dagger2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ice.repositorioejercicios.Clases.UserVipApplication
 import com.ice.repositorioejercicios.Dagger2.Model.Body
+import com.ice.repositorioejercicios.R
 import javax.inject.Inject
 
 class Dagger2Activity : AppCompatActivity() {

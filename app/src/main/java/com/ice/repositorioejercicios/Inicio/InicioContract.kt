@@ -13,6 +13,7 @@ interface InicioContract {
         fun initActivityWebView(view: android.view.View)
         fun initActivitySharedPreferences(view: android.view.View)
         fun initActivityDagger2Prueba(view: android.view.View)
+        fun initFireBases(view: android.view.View)
     }
 
     interface Presenter{

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "779730780671",
+    "project_id": "fb-practica-openix-josue",
+    "storage_bucket": "fb-practica-openix-josue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779730780671:android:c28522e1aaf0a0ee2367ca",
+        "android_client_info": {
+          "package_name": "com.ice.repositorioejercicios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779730780671-r3h9hc51fsqfhtt7k5cpd01rrd7n2uj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ice.repositorioejercicios",
+            "certificate_hash": "fbfc764f66a6df5c01912039fdc911cc899ea3a1"
+          }
+        },
+        {
+          "client_id": "779730780671-jfps7o5n0s7j4edh9hucv74l2pq51v6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu75Fl0PHaRj_0ZqFvL0qFkz74omAFcYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779730780671-jfps7o5n0s7j4edh9hucv74l2pq51v6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
