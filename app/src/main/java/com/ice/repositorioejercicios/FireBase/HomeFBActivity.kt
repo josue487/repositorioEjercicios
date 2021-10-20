@@ -3,6 +3,7 @@ package com.ice.repositorioejercicios.FireBase
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
 import com.ice.repositorioejercicios.R
 import kotlinx.android.synthetic.main.activity_home_fbactivity.*
@@ -10,7 +11,8 @@ import kotlinx.android.synthetic.main.activity_home_fbactivity.*
 
 enum class ProviderType{
     BASIC,
-    GOOGLE
+    GOOGLE,
+    FACEBOOK
 }
 
 class HomeFBActivity : AppCompatActivity() {
@@ -40,6 +42,11 @@ class HomeFBActivity : AppCompatActivity() {
             val prefs = getSharedPreferences("User", Context.MODE_PRIVATE).edit()
             prefs.clear()
             prefs.apply()
+
+            if(provider==ProviderType.FACEBOOK.name){
+                LoginManager.getInstance().logOut()
+            }
+
             FirebaseAuth.getInstance().signOut()
             onBackPressed()
         }
